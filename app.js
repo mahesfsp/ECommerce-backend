@@ -9,6 +9,7 @@ dotenv.config({ path: path.join(__dirname, "config", "config.env") });
 const products = require('./routes/product');
 const orders = require('./routes/order');
 
+app.use(express.json());
 app.use('/api/v1',products);
 app.use('/api/v1',orders);
 
