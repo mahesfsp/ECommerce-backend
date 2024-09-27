@@ -6,7 +6,7 @@ const {
 
 const router = express.Router();
 
-router.route("/product").get(getProducts);
+router.route("/products").get(getProducts);
 
 router.route("/product/:id").get(getSingleProduct);
 
